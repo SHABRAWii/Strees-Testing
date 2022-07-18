@@ -1,7 +1,7 @@
 clear
 {
-    AC_CODE="JAVA" ## { 'C++' or 'JAVA' or 'PYTHON' }
-    WA_CODE="JAVA" ## { 'C++' or 'JAVA' or 'PYTHON' }
+    AC_CODE="C++" ## { 'C++' or 'JAVA' or 'PYTHON' }
+    WA_CODE="C++" ## { 'C++' or 'JAVA' or 'PYTHON' }
     LANG=$WA_CODE
     [ "$LANG" = "JAVA" ] && LANG="Java"
     [ "$LANG" = "PYTHON" ] && LANG="Python"
