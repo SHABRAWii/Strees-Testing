@@ -47,16 +47,32 @@ it is used mostly in competitive programming and developing algorithms.
   * **Predefined test cases** that have **special properties** must get their **own generator written from scratch**.
   * **Memory** of the running **algorithm** are **not** being **measured**.
 
-# Getting Started
-&nbsp; Get **local copy** of the project on your PC.
+# How To Use
+## &nbsp;&nbsp;&nbsp; Get **local copy** of the project on your PC.
 ```bash
 git clone https://github.com/SHABRAWii/Strees-Testing.git
 ```
+## &nbsp;&nbsp;&nbsp; Get All Dependencies
 &nbsp; If you are using **Windows** make sure you have **bash** installed. For me when I have **Windows Subsystem Linux (WSL)** so I **can** use **bash**.
 ```bash
 chmod +x init.sh         # make init.sh file excutable
 ./init.sh                # run init.sh and type your (WSL) password and it will install all requirements
 ```
+## &nbsp;&nbsp;&nbsp; Configure The Stress Testing Type
+&nbsp; In **Stress_Test.sh** file Edit these three parameters
+  * "*TimeLimit=?*" Enter the time limit for your algorithm.
+  * "*AC_CODE=?*" Enter the Accepted Code Language you will use. ( Brute Force )
+  * "*WA_CODE=?*" Enter the Wrong Answer Code Language you will use. ( Algorithm )
+![carbon (1)](https://user-images.githubusercontent.com/72987571/179629968-81356f9c-08ec-42de-aa4c-4da2f02062b2.svg)
 
+>**Note,** that if you want to edit the **Time limit** of the **Accepted Code** or the Time limit of the **Generator Code**.
+> * For **Accepted Code** 
+> ```bash
+> 173: inc=1000 ## This line for detemining the Generator Code Time Limit
+> ... ## Note that both increment values are added to the predefined Time Limit Value
+> ... ##     we declared above to get the total Time Limit for each of them
+> 184: inc=3000 ## This line for detemining the Accepted Code Time Limit
+>```
+## &nbsp;&nbsp;&nbsp; Edit The Algorithm and Brute force files
 
 
