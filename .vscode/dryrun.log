@@ -1,0 +1,5 @@
+make.exe --dry-run --keep-going --print-directory
+make.exe: Entering directory `/d/Code/Git/Strees-Test'
+echo -n 
+make.exe: Leaving directory `/d/Code/Git/Strees-Test'
+ 
