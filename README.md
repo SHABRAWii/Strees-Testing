@@ -86,28 +86,19 @@ chmod +x init.sh         # make init.sh file excutable
 <img align="right" width="500"  src="https://user-images.githubusercontent.com/72987571/179706327-0a068b02-3042-4e5d-af45-344e0122d10d.png">
 
 > * **AC_Output.in**       :
-> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **This contains The Output of the Accepted Code that 
-> <br> &nbsp; &nbsp; &nbsp;&nbsp; are being compared with the wrong one**. If you got 
-> <br> &nbsp; &nbsp; &nbsp;&nbsp;**`Wrong Answer`**, you can see this output and the other code 
-> <br> &nbsp; &nbsp; &nbsp;&nbsp; output or use **<a href="https://saythanks.io/to/bullredeyes@gmail.com"> Sampling Comparetor </a>** which we will $$$$$$$$$$$$$$$$
-> <br> &nbsp; &nbsp; &nbsp;&nbsp; mention later.
+> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **This contains The Output of the Accepted Code that are being compared with the wrong one**. If you got **`Wrong Answer`**, you can see this output and the other code output or use **<a href="https://saythanks.io/to/bullredeyes@gmail.com"> Sampling Comparetor </a>** which we will mention later.
 > * **AC_Solution.class**       :
-> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **This is last excutable file** generated from **`AC_Solution.java`** 
-> <br> &nbsp; &nbsp; &nbsp;&nbsp; **Don't worry about it nothing need to do here**
+> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **This is last excutable file** generated from **`AC_Solution.java`** **Don't worry about it nothing need to do here**
 > * **AC_Solution.cpp**       :
-> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **This is your `Accpted (Brute force)` Solution** If you 
-> <br> &nbsp; &nbsp; &nbsp;&nbsp; will use **C++** Programming language.
+> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **This is your `Accpted (Brute force)` Solution** If you will use **C++** Programming language.
 > * **AC_Solution.java**       :
-> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **This is your `Accpted (Brute force)` Solution** If you 
-> <br> &nbsp; &nbsp; &nbsp;&nbsp; will use **Java** Programming language.
+> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **This is your `Accpted (Brute force)` Solution** If you will use **Java** Programming language.
 > * **AC_Solution.py**       :
 > <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **This is your `Accpted (Brute force)` Solution** If you will use **Python** Programming language.
 > * **AC_Solution.spec**       :
->  <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **This file tells PyInstaller how to process your script.**
-> <br> &nbsp; &nbsp; &nbsp;&nbsp; **Don't worry about it nothing need to do here**
+>  <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **This file tells PyInstaller how to process your script.** **Don't worry about it nothing need to do here**
 > * **dist/AC_Solution**       :
-> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **This is last excutable file** generated from **`AC_Solution.py`** 
-> <br> &nbsp; &nbsp; &nbsp;&nbsp; **Don't worry about it nothing need to do here**
+> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **This is last excutable file** generated from **`AC_Solution.py`**  **Don't worry about it nothing need to do here**
 
 ## &nbsp;&nbsp;&nbsp; Generate Random test cases using the Generator
 ### &nbsp;&nbsp;&nbsp; Using Current Generator system:
@@ -116,19 +107,13 @@ chmod +x init.sh         # make init.sh file excutable
 <img align="right" width="500"  src="https://user-images.githubusercontent.com/72987571/179711109-f80fa49a-70cc-48eb-8476-f589e4f84439.png">
 
 > * **Generator.in**       :
-> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **This where you type how you want your test case to 
-> <br> &nbsp; &nbsp; &nbsp;&nbsp; look like**. see
-**<a href="https://saythanks.io/to/bullredeyes@gmail.com"> Generator_Commands.md </a>** file for further
-> <br> &nbsp; &nbsp; &nbsp;&nbsp; information 
+> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **This where you type how you want your test case to look like**. see
+**<a href="https://saythanks.io/to/bullredeyes@gmail.com"> Generator_Commands.md </a>** 
+file for further information 
 > * **Stress_Generator.cpp**       :
-> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **This is Code translate your commands** in 
-> <br> &nbsp; &nbsp; &nbsp;&nbsp; `Generator.in` and Generate random test cases and put it
-> <br> &nbsp; &nbsp; &nbsp;&nbsp; in `Stress_input.in`.
-> <br> &nbsp; &nbsp; &nbsp;&nbsp; **Don't worry about it nothing need to do here**
+> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **This is Code translate your commands** in `Generator.in` and Generate random test cases and put it in `Stress_input.in`. **Don't worry about it nothing need to do here**
 > * **Stress_input.in**       :
-> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **This is the generated test case**. If the program stops and you got **Over flows** or **Segmentation Fault** or **Wrong Answer** then 
-> <br> &nbsp; &nbsp; &nbsp;&nbsp; this is the test case which your **Algorithm fails in**. **Trace** your **Solution ( Algorithm )**, **find** the **mistake**, try this test case again and 
-> <br> &nbsp; &nbsp; &nbsp;&nbsp; compare your output with the Accepted Output. You will get a successfull Solution ✔️.
+> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **This is the generated test case**. If the program stops and you got **Over flows** or **Segmentation Fault** or **Wrong Answer** then this is the test case which your **Algorithm fails in**. **Trace** your **Solution ( Algorithm )**, **find** the **mistake**, try this test case again and compare your output with the Accepted Output. You will get a successfull Solution ✔️.
 
 ## &nbsp;&nbsp;&nbsp; Run the Stress_Test Program
 ```bash
