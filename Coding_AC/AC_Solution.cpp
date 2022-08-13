@@ -32,4 +32,5 @@ int main()
         for (int i=1; i<=m; i++) l[i]=0, r[i]=0;
     }
     return 0;
+    int i = 0;
 }
