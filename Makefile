@@ -5,7 +5,7 @@ build_AC : $(AC_CODE)
 build_WA : $(WA_CODE)
 
 Build_Obj/Generator : Generator/Stress_Generator.cpp
-	@g++ -O3 -std=c++17  -fsanitize=address -fsanitize=undefined -D_GLIBCXX_DEBUG -g -w -Wshadow -Wall -o Build_Obj/Generator Generator/Stress_Generator.cpp
+	@g++ -O3 -std=c++17  -fsanitize=address -fsanitize=undefined -D_GLIBCXX_DEBUG -g -w -Wshadow -Wall -o Build_Obj/Generator -g Generator/*.cpp
 
 Build_Obj/AC.C++ : Coding_AC/AC_Solution.cpp
 	@g++ -O2 -std=c++17  -fsanitize=address -fsanitize=undefined -D_GLIBCXX_DEBUG -g -w -Wshadow -Wall -o Build_Obj/AC.C++ Coding_AC/AC_Solution.cpp
