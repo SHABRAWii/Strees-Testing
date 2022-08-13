@@ -2,8 +2,12 @@
 
 clear
 {
-    AC_CODE="PYTHON" ## { 'C++' or 'JAVA' or 'PYTHON' }
-    WA_CODE="PYTHON" ## { 'C++' or 'JAVA' or 'PYTHON' }
+    IFS='"' read -r -a AC <<< $(cat Configuration.h | grep AC_CODE)
+    IFS='"' read -r -a WA <<< $(cat Configuration.h | grep WA_CODE)
+    IFS=' ' read -r -a TL <<< $(cat Configuration.h | grep TimeLimit)
+    AC_CODE="${AC[1]}" ## { 'C++' or 'JAVA' or 'PYTHON' }
+    WA_CODE="${WA[1]}" ## { 'C++' or 'JAVA' or 'PYTHON' }
+    declare -i TimeLimit=${TL[2]} ## TimeLimit in seconds
     LANG=$WA_CODE
     [ "$LANG" = "JAVA" ] && LANG="Java"
     [ "$LANG" = "PYTHON" ] && LANG="Python"
@@ -28,7 +32,6 @@ clear
         [ ! -f Coding_WA/WA_Solution.java ] && { touch Coding_WA/WA_Solution.java;true;}
         }
     [ ! -f Generator/Stress_input.in ] && { touch Generator/Stress_input.in;true;}
-    TimeLimit=1000
     # Colors
     {
         RED="\e[1;31m"
