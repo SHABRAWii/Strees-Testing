@@ -1,3 +1,5 @@
+#!/bin/bash
+
 clear
 {
     AC_CODE="C++" ## { 'C++' or 'JAVA' or 'PYTHON' }
@@ -29,9 +31,9 @@ clear
     Title=$CYAN
     ID="\e[1;37m"
     TestCase="\e[1;37m"
-    declare OVERFLOW=1
+    declare -i OVERFLOW=1
 }
- [ ! -f "Build_Obj" ] && { mkdir Build_Obj;true; }
+ [ ! -f "Build_Obj" ] && { mkdir -p Build_Obj;true; }
 function Setup (){
     echo -e "$Borders==========================================================================================================="
     echo -e "$Borders=                            ${Title}Stress Test ${Green}|| ${Title}Time Limit ${CYAN}= ${RED}1.0 Seconds ${CYAN} Running...$Borders                          ="
