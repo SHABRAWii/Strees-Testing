@@ -58,7 +58,7 @@ int main(){
             cout << x << endl;
         }
         
-        
+         int a;
     }
 
     return 0;
