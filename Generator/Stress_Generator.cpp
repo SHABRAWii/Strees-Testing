@@ -47,7 +47,24 @@ string getString(string example, int siz){
     }
     return str;
 }
+void Custom(string str){
+    str.pop_back();
+    str.pop_back();
+    if(str == "Custom_1"){
+        Custom_1();
+    }else if(str == "Custom_2"){
+        Custom_2();
+    }else if(str == "Custom_3"){
+        Custom_3();
+    }else if(str == "Custom_4"){
+        Custom_4();
+    }
+}
 void Analyze(string str){
+    if(str[0] == '$'){
+        Custom(str.substr(1));
+        return;
+    }
     long long l, r; // For Integer Values
     int container;  // For Specific type of Randomization
     char f, t; // For string generate from charachter $f to charachter $t
@@ -151,11 +168,13 @@ void Analyze(string str){
     }
 }
 bool out = 0;
-void TC(int n, string tc_str){
+void TC(int n, bool p, string tc_str){
     if(!out){
         out = 1;
-    }else
+    }else if(p){
         cout << n << endl;
+        p = 0;
+    }
     stringstream tc(tc_str);
     for(int i = 0 ; i < n ; ++i){
         tc.clear();
@@ -169,6 +188,8 @@ void TC(int n, string tc_str){
                 if(isdigit(command[0])){
                     _n = stoll(command);
                 }else{
+                    command.pop_back();
+                    command = command.substr(1);
                     _n = StringToNum[command];
                 }
                 stringstream _tc;
@@ -183,7 +204,7 @@ void TC(int n, string tc_str){
                         break;
                     _tc << _command << endl;
                 }
-                TC(_n, _tc.str());
+                TC(_n, p, _tc.str());
             }else{
                 Analyze(command);
             }
@@ -198,20 +219,19 @@ void Do(){
         str.erase(remove(str.begin(), str.end(), ' '), str.end());// remove all spaces
         tc << str << endl;
     }
-    TC(1, tc.str());
+    TC(1, 1, tc.str());
     return;
 }
 int main(){ 
     #ifdef VS_FreeOpen 
-        // cout << "HI lkansdaksnd\n";
-        // freopen("Generator.in", "r", stdin); 
-        // freopen("Stress_input.in", "w", stdout); 
+        freopen("Generator.in", "r", stdin); 
+        freopen("Stress_input.in", "w", stdout); 
     #else
         freopen("Generator/Generator.in", "r", stdin); 
         freopen("Generator/Stress_input.in", "w", stdout); 
     #endif
-    Custom_2();
-    // Do();
+
+    Do();
 
     return 0; 
 } 
