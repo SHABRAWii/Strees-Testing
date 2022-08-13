@@ -2,17 +2,32 @@
 
 clear
 {
-    AC_CODE="C++" ## { 'C++' or 'JAVA' or 'PYTHON' }
-    WA_CODE="C++" ## { 'C++' or 'JAVA' or 'PYTHON' }
+    AC_CODE="PYTHON" ## { 'C++' or 'JAVA' or 'PYTHON' }
+    WA_CODE="PYTHON" ## { 'C++' or 'JAVA' or 'PYTHON' }
     LANG=$WA_CODE
     [ "$LANG" = "JAVA" ] && LANG="Java"
     [ "$LANG" = "PYTHON" ] && LANG="Python"
-    [ "$AC_CODE" = "C++" ] && AC_CODE="Build_Obj/AC.C++"
-    [ "$AC_CODE" = "PYTHON" ] && AC_CODE="Coding_AC/dist/AC_Solution"
-    [ "$AC_CODE" = "JAVA" ] && AC_CODE="Coding_AC/AC_Solution.class"
-    [ "$WA_CODE" = "C++" ] && WA_CODE="Build_Obj/WA.C++"
-    [ "$WA_CODE" = "PYTHON" ] && WA_CODE="Coding_WA/dist/WA_Solution"
-    [ "$WA_CODE" = "JAVA" ] && WA_CODE="Coding_WA/WA_Solution.class"
+    [ ! -d Coding_AC ] && { mkdir "Coding_AC";true;}
+    [ ! -d Coding_WA ] && { mkdir "Coding_WA";true;}
+    [ "$AC_CODE" = "C++" ] && { AC_CODE="Build_Obj/AC.C++";true;
+        [ ! -f Coding_AC/AC_Solution.cpp ] && { touch Coding_AC/AC_Solution.cpp;true;}
+        }
+    [ "$AC_CODE" = "PYTHON" ] && { AC_CODE="Coding_AC/dist/AC_Solution";true;
+        [ ! -f Coding_AC/AC_Solution.python ] && { touch Coding_AC/AC_Solution.py;true;}
+        }
+    [ "$AC_CODE" = "JAVA" ] && { AC_CODE="Coding_AC/AC_Solution.class";true;
+        [ ! -f Coding_AC/AC_Solution.java ] && { touch Coding_AC/AC_Solution.java;true;}
+        }
+    [ "$WA_CODE" = "C++" ] && { WA_CODE="Build_Obj/WA.C++";true;
+        [ ! -f Coding_WA/WA_Solution.cpp ] && { touch Coding_WA/WA_Solution.cpp;true;}
+        }
+    [ "$WA_CODE" = "PYTHON" ] && { WA_CODE="Coding_WA/dist/WA_Solution";true;
+        [ ! -f Coding_WA/WA_Solution.python ] && { touch Coding_WA/WA_Solution.py;true;}
+        }
+    [ "$WA_CODE" = "JAVA" ] && { WA_CODE="Coding_WA/WA_Solution.class";true;
+        [ ! -f Coding_WA/WA_Solution.java ] && { touch Coding_WA/WA_Solution.java;true;}
+        }
+    [ ! -f Generator/Stress_input.in ] && { touch Generator/Stress_input.in;true;}
     TimeLimit=1000
     # Colors
     {
