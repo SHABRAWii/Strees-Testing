@@ -13,7 +13,7 @@ clear
         [ ! -f Coding_AC/AC_Solution.cpp ] && { touch Coding_AC/AC_Solution.cpp;true;}
         }
     [ "$AC_CODE" = "PYTHON" ] && { AC_CODE="Coding_AC/dist/AC_Solution";true;
-        [ ! -f Coding_AC/AC_Solution.python ] && { touch Coding_AC/AC_Solution.py;true;}
+        [ ! -f Coding_AC/AC_Solution.py ] && { touch Coding_AC/AC_Solution.py;true;}
         }
     [ "$AC_CODE" = "JAVA" ] && { AC_CODE="Coding_AC/AC_Solution.class";true;
         [ ! -f Coding_AC/AC_Solution.java ] && { touch Coding_AC/AC_Solution.java;true;}
@@ -22,7 +22,7 @@ clear
         [ ! -f Coding_WA/WA_Solution.cpp ] && { touch Coding_WA/WA_Solution.cpp;true;}
         }
     [ "$WA_CODE" = "PYTHON" ] && { WA_CODE="Coding_WA/dist/WA_Solution";true;
-        [ ! -f Coding_WA/WA_Solution.python ] && { touch Coding_WA/WA_Solution.py;true;}
+        [ ! -f Coding_WA/WA_Solution.py ] && { touch Coding_WA/WA_Solution.py;true;}
         }
     [ "$WA_CODE" = "JAVA" ] && { WA_CODE="Coding_WA/WA_Solution.class";true;
         [ ! -f Coding_WA/WA_Solution.java ] && { touch Coding_WA/WA_Solution.java;true;}
