@@ -6,6 +6,7 @@
 #include <chrono>
 #include <map>
 #include <set>
+#include "CustomGeneration.h"
 
 using namespace std;
 #define RESIZE_SPACE(x) x.resize(x.find_first_of(' ') - 1);
@@ -65,7 +66,7 @@ void Analyze(string str){
             sscanf(str.c_str(), "%[^(](%lld,%lld,%[^)])", &specific[0], &l, &r, &nC[0]);
             RESIZE_SPACE(specific);
             RESIZE_SPACE(nC);
-            if(nC[0] == '$'){
+            if(nC[0] == '$'){ 
                 n = StringToNum[nC.substr(1)];
             }else{
                 n = stoi(nC.substr(1));
@@ -202,14 +203,15 @@ void Do(){
 }
 int main(){ 
     #ifdef VS_FreeOpen 
-        freopen("Generator.in", "r", stdin); 
-        freopen("Stress_input.in", "w", stdout); 
-    #endif
-    #ifndef VS_FreeOpen 
+        // cout << "HI lkansdaksnd\n";
+        // freopen("Generator.in", "r", stdin); 
+        // freopen("Stress_input.in", "w", stdout); 
+    #else
         freopen("Generator/Generator.in", "r", stdin); 
         freopen("Generator/Stress_input.in", "w", stdout); 
     #endif
-    Do();
+    Custom_2();
+    // Do();
 
     return 0; 
 } 
